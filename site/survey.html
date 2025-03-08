@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="hsianglingT">
+  <meta name="description" content="This is a website for learning HTML/CSS/Javascript">
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+  <title>Getting Started in CSD112</title>
+</head>
+
+<body>
+  <div class="width-wrap">
+    <header id="top">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="survey.html">Survey</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="making-a-form">
+        <h1>Survey</h1>
+        <form method="post" action="https://formspree.io/f/meoajvww">
+          <div>
+            <label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="name_field" id="name_field" required>
+          </div>
+          <div>
+            <label for="email_field">What is your email? <abbr title="required" aria-label="required">*</abbr></label>
+            <input type="email" name="email_field" id="email_field" required>
+          </div>
+          <div>
+            <label for="best_whole_number">Which whole number is best? </label>
+            <input type="number" name="best_whole_number" id="best_whole_number" min="0">
+          </div>
+          <div>
+            <label for="best_day">Which day is best? </label>
+            <input type="date" name="best_day" id="best_day">
+          </div>
+          <div>
+            <label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
+            <select name="best_bear" id="best_bear" required>
+              <option value="">&nbsp;</option>
+              <option value="black">Black</option>
+              <option value="brown">Brown</option>
+              <option value="care">Care</option>
+              <option value="panda">Panda</option>
+              <option value="polar">Polar</option>
+              <option value="teddy">Teddy</option>
+            </select>
+          </div>
+          <div>
+            <fieldset>
+              <legend>Do you like radio buttons? </legend>
+              <ul>
+                <li>
+                  <input type="radio" name="enjoys_radio_buttons" value="yes" id="enjoys_radio_buttons_yes">
+                  <label for="enjoys_radio_buttons_yes">Yes</label>
+                </li>
+                <li>
+                  <input type="radio" name="enjoys_radio_buttons" value="no" id="enjoys_radio_buttons_no">
+                  <label for="enjoys_radio_buttons_no">No</label>
+                </li>
+                <li>
+                  <input type="radio" name="enjoys_radio_buttons" value="?" id="enjoys_radio_buttons_default" checked>
+                  <label for="enjoys_radio_buttons_default">None of your business</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div>
+            <label for="life_meaning">What is the meaning of life? </label>
+            <textarea name="life_meaning" id="life_meaning" rows="5" cols="50"
+              placeholder="Enter the correct answer here."></textarea>
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <hr>
+      <blockquote>
+        "The power of finding beauty in the humblest things makes home happy and life lovely."<br>
+        <cite>&mdash; <span class="author">Louisa May Alcott</span></cite>
+      </blockquote>
+      <p>
+        &copy; 2025 <a href="mailto:hsiangLing@example.com?subject=Message%20from%20CSD112%20Website"
+          title="Send an email">HsiangLing</a>
+      </p>
+      <picture>
+        <source type="image/svg+xml" srcset="images/sc-logo.svg">
+        <img src="images/sc-logo.png" alt="Sault college logo" width="70"
+          srcset="images/sc-logo.png 1x, images/sc-logo_105.png 1.5x, images/sc-logo_105.png 2x">
+      </picture>
+    </footer>
+    <a href="#top" title="Back to top">◤</a>
+  </div>
+</body>
+
+</html>
