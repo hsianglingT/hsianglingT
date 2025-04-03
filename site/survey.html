@@ -22,8 +22,8 @@
       </nav>
     </header>
 
-    <main>
-      <div id="making-a-form">
+    <main id="making-a-form">
+      <div>
         <h1>Survey</h1>
         <form method="post" action="https://formspree.io/f/meoajvww">
           <div>
@@ -44,8 +44,8 @@
           </div>
           <div>
             <label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
-            <select name="best_bear" id="best_bear" required>
-              <option value="">&nbsp;</option>
+            <select name="best_bear" id="best_bear" aria-required="true" required>
+              <option value="" selected> </option>
               <option value="black">Black</option>
               <option value="brown">Brown</option>
               <option value="care">Care</option>
