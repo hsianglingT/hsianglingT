@@ -7,6 +7,9 @@
   <meta name="description" content="This is a website for learning HTML/CSS/Javascript">
   <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Yatra+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <title>Getting Started in CSD112</title>
 </head>
@@ -20,105 +23,107 @@
           <li><a href="links.html">Links</a></li>
           <li><a href="glossary.html">Glossary</a></li>
           <li><a href="survey.html">Survey</a></li>
+          <li><a href="lorem.html">Lorem</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <!-- Found me! -->
-      <section id="bio">
-        <h1>Welcome to HsiangLing's Website!</h1>
+
+      <h1>Welcome to HsiangLing's Website!</h1>
+      <div class="bio">
         <p>I'm a Sault College student.</p>
         <p>I'm studying in computer programming.</p>
         <a href="images/fullSizePhoto.jpg" target="_blank">
           <img src="images/thumbnailPhoto-150x150.png" alt="profile photo" sizes="(max-width:500px) 150px, 300px"
             srcset="images/thumbnailPhoto-150x150.png 150w, images/thumbnailPhoto-300x300.png 300w"></a>
-      </section>
-      <div id="making-a-table">
-        <table>
-          <caption>Table 1. Current Courses</caption>
-          <thead>
-            <tr>
-              <th rowspan="2">Term</th>
-              <th colspan="3" scope="colgroup">Course</th>
-            </tr>
-            <tr>
-              <th scope="col">Code</th>
-              <th scope="col">Name</th>
-              <th scope="col">Hrs/Week</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th rowspan="6" scope="rowgroup">Fall</th>
-              <td>CMM115</td>
-              <td>COMMUNICATIONS I</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>CSD110</td>
-              <td>INTRO TO PROGRAMMING</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>CSD113</td>
-              <td>COMPUTING ENV & TOOL</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>CSD122</td>
-              <td>HARDWARE/OS/NETWORKS</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>MTH123</td>
-              <td>COMPUTER MATH</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>TNY130</td>
-              <td>TECHNOLOGY/SOCIETY</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <th rowspan="6" scope="rowgroup">Winter</th>
-              <td>CSD123</td>
-              <td>DATABASE I</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>CSD124</td>
-              <td>SYSTEMS ANALYSIS AND DESIGN</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>CSD121</td>
-              <td>PROGRAMMING CONCEPTS I</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>CSD112</td>
-              <td>INTRODUCTION TO WEB DEVELOPMENT</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>CSA103</td>
-              <td>BUSINESS APPLICATIONS I</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>CSD125</td>
-              <td>EMERGING TECHNOLOGY</td>
-              <td>3</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th colspan="3" scope="row">Total</th>
-              <td>43</td>
-            </tr>
-          </tfoot>
-        </table>
+        <div id="making-a-table">
+          <table >
+            <caption>Table 1. Current Courses</caption>
+            <thead>
+              <tr>
+                <th rowspan="2">Term</th>
+                <th colspan="3" scope="colgroup">Course</th>
+              </tr>
+              <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Hrs/Week</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th rowspan="6" scope="rowgroup">Fall</th>
+                <td>CMM115</td>
+                <td>COMMUNICATIONS I</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>CSD110</td>
+                <td>INTRO TO PROGRAMMING</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSD113</td>
+                <td>COMPUTING ENV & TOOL</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSD122</td>
+                <td>HARDWARE/OS/NETWORKS</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>MTH123</td>
+                <td>COMPUTER MATH</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>TNY130</td>
+                <td>TECHNOLOGY/SOCIETY</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th rowspan="6" scope="rowgroup">Winter</th>
+                <td>CSD123</td>
+                <td>DATABASE I</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSD124</td>
+                <td>SYSTEMS ANALYSIS AND DESIGN</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>CSD121</td>
+                <td>PROGRAMMING CONCEPTS I</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSD112</td>
+                <td>INTRODUCTION TO WEB DEVELOPMENT</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSA103</td>
+                <td>BUSINESS APPLICATIONS I</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSD125</td>
+                <td>EMERGING TECHNOLOGY</td>
+                <td>3</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th colspan="3" scope="row">Total</th>
+                <td>43</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
 
       <h2>My Favourite Things</h2>
@@ -170,8 +175,9 @@
         <img src="images/sc-logo.png" alt="Sault college logo" width="70"
           srcset="images/sc-logo.png 1x, images/sc-logo_105.png 1.5x, images/sc-logo_105.png 2x">
       </picture>
+      <a id="back-to-top" href="#top" title="Back to top">◤</a>
     </footer>
-    <a href="#top" title="Back to top">◤</a>
+  
   </div>
 </body>
 
