@@ -24,6 +24,7 @@
           <li><a href="glossary.html">Glossary</a></li>
           <li><a href="survey.html">Survey</a></li>
           <li><a href="lorem.html">Lorem</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
@@ -37,9 +38,11 @@
         <p>I'm studying in computer programming.</p>
         <a href="images/fullSizePhoto.jpg" target="_blank">
           <img src="images/thumbnailPhoto-150x150.png" alt="profile photo" sizes="(max-width:500px) 150px, 300px"
-            srcset="images/thumbnailPhoto-150x150.png 150w, images/thumbnailPhoto-300x300.png 300w"></a>
+            srcset="images/thumbnailPhoto-150x150.png 150w, images/thumbnailPhoto-300x300.png 300w">
+          <img class="paperclip" src="images/paperclip.png" alt="paperclip">
+        </a>
         <div id="making-a-table">
-          <table >
+          <table>
             <caption>Table 1. Current Courses</caption>
             <thead>
               <tr>
@@ -127,38 +130,64 @@
       </div>
 
       <h2>My Favourite Things</h2>
-      <figure>
-        <a href="https://www.saultcollege.ca/" target="_blank" title="Sault College Website"><img src="images/logo.png"
-            alt="Sault college logo"></a>
-        <figcaption>Sault College</figcaption>
-      </figure>
-
-      <h3>Fruits</h3>
-      <ol>
-        <li>Apple</li>
-        <li>Banana</li>
-        <li>Guava</li>
-      </ol>
-      <h3>Haiku</h3>
-      <p>
-        Life’s little, our heads sad.<br>
-        Redeemed and wasting clay this chance.<br>
-        Be of use.<br>
-        <cite>by <span class="author">Ravi Shankar</span></cite>
-      </p>
-
-      <h3>Public Domain Audiobook</h3>
-      <audio controls>
-        <source src="https://www.archive.org/download/spc260_2502_librivox/spc260_abcoffoxhunting_sds_64kb.mp3">
-        <a href="https://www.archive.org/download/spc260_2502_librivox/spc260_abcoffoxhunting_sds_64kb.mp3"
-          target="_blank">Download this audio</a>
-      </audio>
-      <h3>YouTube Video</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/XAKTTSws0MM?si=3DylfG0HjrtP_NKO"
-        title="YouTube video player"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      </iframe>
+      <div class="favourites">
+        <input type="radio" name="radio-buttons-favourites" value="School" id="tag1" checked>
+        <label for="tag1">
+          <h3>School</h3>
+        </label>
+        <div>
+          <figure>
+            <a href="https://www.saultcollege.ca/" target="_blank" title="Sault College Website"><img
+                src="images/logo.png" alt="Sault college logo"></a>
+            <figcaption>School</figcaption>
+          </figure>
+        </div>
+        <input type="radio" name="radio-buttons-favourites" value="Fruits" id="tag2">
+        <label for="tag2">
+          <h3>Fruits</h3>
+        </label>
+        <div>
+          <ol>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Guava</li>
+          </ol>
+        </div>
+        <input type="radio" name="radio-buttons-favourites" value="Haiku" id="tag3">
+        <label for="tag3">
+          <h3>Haiku</h3>
+        </label>
+        <div>
+          <p>
+            Life’s little, our heads sad.<br>
+            Redeemed and wasting clay this chance.<br>
+            Be of use.<br>
+            <cite>by <span class="author">Ravi Shankar</span></cite>
+          </p>
+        </div>
+        <input type="radio" name="radio-buttons-favourites" value="Public Domain Audiobook" id="tag4">
+        <label for="tag4">
+          <h3>Public Domain Audiobook</h3>
+        </label>
+        <div>
+          <audio controls>
+            <source src="https://www.archive.org/download/spc260_2502_librivox/spc260_abcoffoxhunting_sds_64kb.mp3">
+            <a href="https://www.archive.org/download/spc260_2502_librivox/spc260_abcoffoxhunting_sds_64kb.mp3"
+              target="_blank">Download this audio</a>
+          </audio>
+        </div>
+        <input type="radio" name="radio-buttons-favourites" value="YouTube Video" id="tag5">
+        <label for="tag5">
+          <h3>YouTube Video</h3>
+        </label>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XAKTTSws0MM?si=3DylfG0HjrtP_NKO"
+            title="YouTube video player"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
     </main>
     <footer>
       <hr>
@@ -175,9 +204,10 @@
         <img src="images/sc-logo.png" alt="Sault college logo" width="70"
           srcset="images/sc-logo.png 1x, images/sc-logo_105.png 1.5x, images/sc-logo_105.png 2x">
       </picture>
-      <a id="back-to-top" href="#top" title="Back to top">◤</a>
+
     </footer>
-  
+    <a id="back-to-top" href="#top" title="Back to top">◤</a>
+
   </div>
 </body>
 
