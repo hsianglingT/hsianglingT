@@ -85,11 +85,6 @@ a:hover {
 
 }
 
-/* #top nav ul li {
-  display: inline-block;
-} */
-
-
 
 
 ::selection {
@@ -194,8 +189,8 @@ h1 {
 }
 
 .bio {
-  column-count: 3;
   column-gap: 2em;
+  column-width: 13em;
 }
 
 #making-a-table {
@@ -276,7 +271,7 @@ footer {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
 }
 
@@ -295,12 +290,22 @@ footer {
   grid-column: span 2;
 }
 
+@media screen and (max-width:450px) {
+  .gallery .col-span-2 {
+    grid-column: span 1;
+  }
+}
+
+.gallery a {
+  transition: transform 200ms;
+}
+
 .gallery a:hover {
   transform: scale(1.1);
 }
 
 .bio a {
-  display: block;
+  display: inline-block;
   position: relative;
 }
 
@@ -327,4 +332,3 @@ footer {
 #back-to-top:hover {
   transform: rotate(45deg);
 }
-
