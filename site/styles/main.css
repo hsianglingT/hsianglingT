@@ -327,8 +327,161 @@ footer {
   position: sticky;
   bottom: 10px;
   display: inline-block;
+  transition: transform 200ms;
 }
 
 #back-to-top:hover {
   transform: rotate(45deg);
+}
+
+@media screen and (max-width: 600px) {
+
+  .bio table thead,
+  .bio table tfoot,
+  .bio table th {
+    display: none;
+  }
+
+  .bio table td {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .bio table caption {
+    caption-side: top;
+  }
+
+  .bio table td:first-of-type {
+    padding-top: 0.3em;
+    font-weight: bold;
+  }
+
+  .bio table td:last-of-type {
+    padding-bottom: 0.3em;
+    font-style: italic;
+    font-size: 0.8em;
+    position: relative;
+  }
+
+  .bio table td:last-of-type::after {
+    content: " hrs/wk";
+  }
+
+}
+
+.loremphoto-left {
+  float: left;
+}
+
+.loremphoto-right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+
+  .loremphoto-left,
+  .loremphoto-right {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .favourites {
+    flex-direction: column;
+  }
+
+  .favourites>label {
+    order: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+
+  .favourites>div {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .favourites iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #top nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 200ms ease;
+  }
+
+  #top nav a {
+    padding-top: 0.5em;
+    border-top: none;
+  }
+
+  #top nav a:hover {
+    border-top: none;
+    text-decoration: underline;
+  }
+}
+
+#menu-toggle,
+.sandwich-icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .sandwich-icon {
+    display: block;
+    width: 40px;
+    height: 25px;
+    border-top: 5px solid rgb(129, 216, 208);
+    cursor: pointer;
+    margin: 1em auto;
+    position: relative;
+    
+  }
+
+  .sandwich-icon::before,
+  .sandwich-icon::after {
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 5px solid rgb(129, 216, 208);
+    position: absolute;
+  }
+
+  .sandwich-icon::before {
+    top: 5px;
+  }
+
+  .sandwich-icon::after {
+    top: 15px;
+  }
+
+  #menu-toggle:checked+.sandwich-icon+ul {
+    height: 250px;
+
+  }
+
+  #menu-toggle:checked+.sandwich-icon {
+    border-color: transparent;
+  }
+
+  #menu-toggle:checked+.sandwich-icon::before {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+
+  #menu-toggle:checked+.sandwich-icon::after {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+
 }
